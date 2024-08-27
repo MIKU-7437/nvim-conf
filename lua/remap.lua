@@ -1,8 +1,8 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+2<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-1<CR>gv=gv")
 
 vim.keymap.set("n", "J", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
@@ -52,4 +52,16 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
+end)
+
+--vim.keymap.set("n", "<A-h>", "<C-w>h")
+--vim.keymap.set("n", "<A-j>", "<C-w>j")
+--vim.keymap.set("n", "<A-k>", "<C-w>k")
+--vim.keymap.set("n", "<A-l>", "<C-w>l")
+
+vim.keymap.set({"n", "v"}, "<C-y>", [["+y]])
+vim.keymap.set("n", "<C-p>", [["+p]])
+
+vim.keymap.set("n", "<C-a>", function()
+    vim.cmd("normal! gg0vG$")
 end)

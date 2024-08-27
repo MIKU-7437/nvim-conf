@@ -1,3 +1,3 @@
 require("set")
 require("remap")
-require("packer")
+require("config.lazy")

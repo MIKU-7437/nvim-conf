@@ -1,0 +1,3 @@
+packet,description,download
+nvim,"just install it",1
+gcc,"C++ compiller for tree-sitter(language highlighting)",0
